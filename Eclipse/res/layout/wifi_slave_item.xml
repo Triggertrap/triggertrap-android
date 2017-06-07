@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/tt_white" >
+
+        <TextView
+            android:textColor="@color/tt_dark_grey"
+            android:id="@+id/wifi_slave_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:text="@string/no_devices_found" />
+
+        <FrameLayout
+           	
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/drawlist_item_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/red_square"
+                android:tint="#00000000" />
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:button="@drawable/check_box_selector"
+                android:id="@+id/wifi_slave_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/card_shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/card_shadow" />
+
+</LinearLayout>

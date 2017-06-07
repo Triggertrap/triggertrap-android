@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_enabled="false" android:drawable="@color/tt_dark_grey" />
+<item android:state_enabled="true" android:state_pressed="true" android:drawable="@color/tt_dark_red" />
+<item android:state_enabled="true" android:state_focused="true" android:drawable="@color/tt_dark_red" />
+<item android:state_enabled="true" android:drawable="@color/tt_red" />
+</selector>

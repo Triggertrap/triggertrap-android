@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:background="@color/tt_red" >
+
+    <com.triggertrap.view.CircleTimerView
+        android:id="@+id/circleTimer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.triggertrap.view.CountingTimerView
+        android:id="@+id/countingTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+</FrameLayout>

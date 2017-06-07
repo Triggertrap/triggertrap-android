@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/tt_vlight_grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wifi_slave_list_header"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:background="@color/tt_medium_grey"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:text="@string/connected_slave_devices" />
+
+            <ScrollView
+                android:id="@+id/scrollMasterList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/wifi_slave_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/wifi_slave_item_empty" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/masterConnectProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/slaceInfoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tt_red"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sequenceLabels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="@string/flick_the_switch" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/tt_dark_grey" />
+
+    <FrameLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/tt_light_grey">
+
+        <Switch
+            android:id="@+id/masterOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:switchTextAppearance="@style/switch_text_appearance"
+            android:thumb="@drawable/switch_thumb_selector" />
+
+        <TextSwitcher
+            android:id="@+id/broadcastingTextSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center" />
+    </FrameLayout>
+
+</com.triggertrap.view.TTLinearLayout>

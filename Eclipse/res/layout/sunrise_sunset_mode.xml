@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tt_vlight_grey"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/tt_vlight_grey"
+        android:orientation="vertical" >
+
+        <com.triggertrap.view.SolarArc
+            android:id="@+id/solarArcView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/text_size_medium" android:paddingBottom="10dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/tt_medium_grey"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView  android:text="@string/undefined_time"
+                android:id="@+id/timeLabel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textColor="@color/tt_red" android:textStyle="bold"
+                android:textSize="@dimen/text_size_very_large" />
+
+            <TextView 
+                android:id="@+id/relativeTimeLabel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="1" 
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView  
+                android:id="@+id/twilightTime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/timeLabel2" android:text="@string/undefined_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textColor="@color/tt_red" android:textStyle="bold"
+                android:textSize="@dimen/text_size_very_large" />
+
+            <TextView
+                android:id="@+id/relativeTimeLabel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLines="1" 
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/twilightTime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.triggertrap.view.TTLinearLayout>

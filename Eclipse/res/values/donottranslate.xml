@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tt_foreground_service_started">tt_foreground_service_started</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nav_drawer_close"></string>
+    <string name="undefined_time">——:——</string>
+
+    <string-array name="tt_mode_groups">
+        <item>@string/welcome</item>
+        <item>@string/cable_release_modes</item>
+        <item>@string/timelapse_modes</item>
+        <item>@string/sound_mode</item>
+        <item>@string/hdr_modes</item>
+        <item>@string/remote_triggers</item>
+        <item>@string/calculators</item>
+        <item>@string/output_settings</item>
+    </string-array>
+    <string-array name="tt_welcome_modes">
+        <item>@string/getting_started</item>
+        <item>@string/buy_dongle</item>
+    </string-array>
+    <string-array name="tt_cable_modes">
+        <item>@string/simple_cable_release</item>
+        <item>@string/press_and_hold</item>
+        <item>@string/press_to_lock</item>
+        <item>@string/timed_release</item>
+    </string-array>
+    <string-array name="tt_timer_modes">
+        <item>@string/timelapse</item>
+        <item>@string/timewarp</item>
+        <item>@string/distancelapse</item>
+        <item>@string/star_trail</item>
+        <item>@string/bramping</item>
+    </string-array>
+    <string-array name="tt_sound_modes">
+        <item>@string/sound_sensor</item>
+    </string-array>
+    <string-array name="tt_hdr_modes">
+        <item>@string/le_hdr</item>
+        <item>@string/le_hdr_timelapse</item>
+    </string-array>
+    <string-array name="tt_remote_trigger_modes">
+        <item>@string/wifi_slave</item>
+        <item>@string/pebble</item>
+    </string-array>
+    <string-array name="tt_calculator_modes">
+        <item>@string/sunrise_sunset</item>
+        <item>@string/nd_calculator</item>
+    </string-array>
+    <string-array name="tt_settings_modes">
+        <item>@string/wifi_master</item>
+    </string-array>
+    <string-array name="tt_welcome_modes_sub_text">
+        <item>@string/a_quick_guide</item>
+        <item>@string/find_out_where_to_get_one</item>
+    </string-array>
+    <string-array name="tt_cable_modes_sub_text">
+        <item>@string/tap_the_button_to_take_a_picture</item>
+        <item>@string/touch_to_start_release_to_stop</item>
+        <item>@string/touch_to_start_touch_to_stop</item>
+        <item>@string/choose_your_shutter_speed</item>
+    </string-array>
+    <string-array name="tt_timer_modes_sub_text">
+        <item>@string/travel_through_time</item>
+        <item>@string/timelapse_with_acceleration</item>
+        <item>@string/perfect_for_roadtrips</item>
+        <item>@string/extreme_exposure_control</item>
+        <item>@string/bulb_ramping_timelapse</item>
+    </string-array>
+    <string-array name="tt_hdr_modes_sub_text">
+        <item>@string/long_exposure_hdr_sets</item>
+        <item>@string/long_exposure_hdr_timelapse</item>
+    </string-array>
+    <string-array name="tt_sound_modes_sub_text">
+        <item>@string/clap_whistle_or_tap</item>
+    </string-array>
+    <string-array name="tt_remote_trigger_modes_sub_text">
+        <item>@string/trigger_remotely</item>
+        <item>@string/trigger_with_your_pebble</item>
+    </string-array>
+    <string-array name="tt_calculators_sub_text">
+        <item>@string/determine_sunrise_sunset</item>
+        <item>@string/determine_nd</item>
+    </string-array>
+    <string-array name="tt_settings_modes_sub_text">
+        <item>@string/take_control</item>
+    </string-array>
+
+    <!-- Notifications -->
+    <string-array name="tt_notifications">
+        <item>@string/press_to_lock</item>
+        <item>@string/timed_release</item>
+        <item>@string/timelapse</item>
+        <item>@string/timewarp</item>
+        <item>@string/star_trail</item>
+        <item>@string/bramping</item>
+        <item>@string/sound_sensor</item>
+        <item>@string/distancelapse</item>
+        <item>@string/le_hdr</item>
+        <item>@string/le_hdr_timelapse</item>
+        <item>@string/wifi_slave</item>
+        <item>@string/wifi_master</item>
+        <item>@string/running_pebble</item>
+        <item>@string/running_pebble</item>
+    </string-array>
+    <string-array name="pref_shutter_setting_labels">
+        <item>@string/flash_shutter</item>
+        <item>@string/one_fifty_shutter</item>
+        <item>@string/five_hundred_shutter</item>
+        <item>@string/one_thousand_shutter</item>
+        <item>@string/one_thousand_five_hundred_shutter</item>
+        <item>@string/three_thousand_shutter</item>
+    </string-array>
+    <string-array name="pref_shutter_setting_values">
+        <item>30</item>
+        <item>150</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>3000</item>
+    </string-array>
+    <string-array name="pref_sensor_delay_setting_labels">
+        <item>@string/zero_seconds</item>
+        <item>@string/zero_point_one_seconds</item>
+        <item>@string/zero_point_two_seconds</item>
+        <item>@string/zero_point_three_seconds</item>
+        <item>@string/zero_point_four_seconds</item>
+        <item>@string/zero_point_five_seconds</item>
+        <item>@string/zero_point_six_seconds</item>
+        <item>@string/zero_point_seven_seconds</item>
+        <item>@string/zero_point_eight_seconds</item>
+        <item>@string/zero_point_nine_seconds</item>
+        <item>@string/point_one_seconds</item>
+        <item>@string/point_two_seconds</item>
+        <item>@string/point_three_seconds</item>
+        <item>@string/point_four_seconds</item>
+        <item>@string/point_five_seconds</item>
+        <item>@string/point_six_seconds</item>
+        <item>@string/point_seven_seconds</item>
+        <item>@string/point_eight_seconds</item>
+        <item>@string/point_nine_seconds</item>
+        <item>@string/one_second</item>
+        <item>@string/two_seconds</item>
+        <item>@string/three_seconds</item>
+        <item>@string/four_seconds</item>
+        <item>@string/five_seconds</item>
+    </string-array>
+    <string-array name="pref_sensor_delay_setting_values">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="pref_sensor_reset_delay_setting_labels">
+        <item>@string/zero_point_five_seconds</item>
+        <item>@string/point_five_seconds</item>
+        <item>@string/one_second</item>
+        <item>@string/two_seconds</item>
+        <item>@string/three_seconds</item>
+        <item>@string/four_seconds</item>
+        <item>@string/five_seconds</item>
+    </string-array>
+    <string-array name="pref_sensor_reset_delay_setting_values">
+        <item>50</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="pref_distance_speed_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_distance_unit_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="pref_distance_speed_labels">
+        <item>@string/meters_per_second</item>
+        <item>@string/miles_per_hour</item>
+        <item>@string/kilometers_per_hour</item>
+    </string-array>
+    <string-array name="pref_distance_unit_labels">
+        <item>@string/meters_kilometers</item>
+        <item>@string/miles_yards</item>
+    </string-array>
+    <string-array name="getting_started_titles">
+        <item>@string/welcome_to_triggertrap</item>
+        <item>@string/navigating_the_app</item>
+        <item>@string/connecting_your_camera</item>
+        <item>@string/get_more_help</item>
+    </string-array>
+    <string-array name="getting_started_headers">
+        <item>@string/oh_hi_there</item>
+        <item>@string/in_triggertrap_mobile</item>
+        <item>@string/to_connect_the</item>
+        <item>@string/did_you_know</item>
+    </string-array>
+    <string-array name="getting_started_body">
+        <item>@string/so_you_want</item>
+        <item>@string/you_can_access_each</item>
+        <item>@string/remember_that_your</item>
+        <item>@string/if_you_get_stuck</item>
+    </string-array>
+    <string-array name="getting_started_footer">
+        <item>@string/lets_get_started</item>
+        <item>@string/got_that_great</item>
+        <item>@string/empty_string</item>
+        <item>@string/anyway_enough_of</item>
+    </string-array>
+
+    <!-- Unicode chars -->
+    <string name="ampersand">\u0026</string>
+    <string name="one_third">\u2153</string>
+    <string name="two_thirds">\u2154</string>
+    <string name="one_half">\u00bd</string>
+    <string name="one_sixteenth">\u0b75</string>
+    <string name="one_eight">\u0b76</string>
+
+    <!-- shutter speeds -->
+    <string name="one_quote">1\"</string>
+    <string name="one_and_one_third">1\"\u2153</string>
+    <string name="one_and_two_third">1\"\u2154</string>
+    <string name="two_quote">2\"</string>
+    <string name="two_and_two_third">2\"\u2154</string>
+    <string name="three_and_one_third">3\"\u2153</string>
+    <string name="four_quote">4\"</string>
+    <string name="five_and_one_third">5\"\u2153</string>
+    <string name="six_and_two_third">6\"\u2154</string>
+    <string name="eigth_quote">8\"</string>
+    <string name="ten_and_two_third">10\"\u2154</string>
+    <string name="thirteen_and_one_third">13\"\u2153</string>
+    <string name="fifteen_quote">15\"</string>
+    <string name="twenty_quote">20\"</string>
+    <string name="twentyfive_quote">25\"</string>
+    <string name="thirty_quote">30\"</string>
+    <string name="forty_quote">40\"</string>
+    <string name="fifty_quote">50\"</string>
+    <string name="s1_min">1\'</string>
+    <string name="s1_min_20">1\'20\"</string>
+    <string name="s1_min_40">1\'40\"</string>
+    <string name="s2_min_05">2\'05\"</string>
+    <string name="s2_min_45">2\'45\"</string>
+    <string name="s3_min_30">3\'30\"</string>
+    <string name="s4_min_20">4\'20\"</string>
+    <string name="s5_min_45">5\'45\"</string>
+    <string name="s7_min_10">7\'10\"</string>
+    <string name="s8_min_30">8\'30\"</string>
+    <string name="s11_min_15">11\'15\"</string>
+    <string name="s14_min_15">14\'15\"</string>
+    <string name="s17_min">17\'</string>
+    <string name="s22_min_45">22\'45\"</string>
+    <string name="s28_min_15">28\'15\"</string>
+    <string name="s34_min">34\'</string>
+    <string name="s45_min_30">45\'30\"</string>
+    <string name="s56_min_30">56\'30\"</string>
+    <string name="s68_min">68\'</string>
+    <string name="s90_min_30">90\'30\"</string>
+    <string name="s113_min_30">113\'30\"</string>
+
+    <string-array name="nd_values">
+        <item>1/4000s</item>
+        <item>1/2000s</item>
+        <item>1/1000s</item>
+        <item>1/500s</item>
+        <item>1/250s</item>
+        <item>1/125s</item>
+        <item>1/60s</item>
+        <item>1/30s</item>
+        <item>1/15s</item>
+        <item>1/8s</item>
+        <item>1/4s</item>
+        <item>1/2s</item>
+        <item>1s</item>
+        <item>2s</item>
+        <item>4s</item>
+        <item>8s</item>
+        <item>15s</item>
+        <item>30s</item>
+        <item>1m</item>
+        <item>2m</item>
+        <item>4m</item>
+        <item>8m</item>
+        <item>15m</item>
+        <item>30m</item>
+        <item>1h</item>
+        <item>2h</item>
+        <item>4h</item>
+        <item>8h</item>
+        <item>16h</item>
+    </string-array>
+    <string-array name="base_shutter_speeds">
+        <item>1/8000</item>
+        <item>1/6400</item>
+        <item>1/5000</item>
+        <item>1/4000</item>
+        <item>1/3200</item>
+        <item>1/2500</item>
+        <item>1/2000</item>
+        <item>1/1600</item>
+        <item>1/1250</item>
+        <item>1/1000</item>
+        <item>1/800</item>
+        <item>1/640</item>
+        <item>1/500</item>
+        <item>1/400</item>
+        <item>1/320</item>
+        <item>1/250</item>
+        <item>1/200</item>
+        <item>1/160</item>
+        <item>1/125</item>
+        <item>1/100</item>
+        <item>1/80</item>
+        <item>1/60</item>
+        <item>1/50</item>
+        <item>1/40</item>
+        <item>1/30</item>
+        <item>1/25</item>
+        <item>1/20</item>
+        <item>1/15</item>
+        <item>1/13</item>
+        <item>1/10</item>
+        <item>1/8</item>
+        <item>1/6</item>
+        <item>1/5</item>
+        <item>1/4</item>
+        <item>0\"3</item>
+        <item>0\"4</item>
+        <item>0\"5</item>
+        <item>0\"6</item>
+        <item>0\"8</item>
+        <item>@string/_1_second</item>
+        <item>@string/_1_1_third_second</item>
+        <item>@string/_1_2_third_second</item>
+        <item>@string/_2_second</item>
+        <item>@string/_2_half_second</item>
+        <item>@string/_3_1_fifth_second</item>
+        <item>@string/_4_second</item>
+        <item>@string/_5_second</item>
+        <item>@string/_6_second</item>
+        <item>@string/_8_second</item>
+        <item>@string/_10_second</item>
+        <item>@string/_13_second</item>
+        <item>@string/_15_second</item>
+        <item>@string/_20_second</item>
+        <item>@string/_25_second</item>
+        <item>@string/_30_second</item>
+    </string-array>
+    <string-array name="nd_names">
+        <item>@string/neutral_density_2</item>
+        <item>@string/neutral_density_4</item>
+        <item>@string/neutral_density_8</item>
+        <item>@string/neutral_density_16</item>
+        <item>@string/neutral_density_32</item>
+        <item>@string/neutral_density_64</item>
+        <item>@string/neutral_density_128</item>
+        <item>@string/neutral_density_256</item>
+        <item>@string/neutral_density_512</item>
+        <item>@string/neutral_density_1024</item>
+    </string-array>
+    <string-array name="shutter_speeds">
+        <item>1/16</item>
+        <item>1/12</item>
+        <item>1/9</item>
+        <item>1/8</item>
+        <item>1/6</item>
+        <item>2/9</item>
+        <item>1/4</item>
+        <item>1/3</item>
+        <item>3/7</item>
+        <item>1/2</item>
+        <item>5/7</item>
+        <item>6/7</item>
+        <item>@string/one_quote</item>
+        <item>@string/one_and_one_third</item>
+        <item>@string/one_and_two_third</item>
+        <item>@string/two_quote</item>
+        <item>@string/two_and_two_third</item>
+        <item>@string/three_and_one_third</item>
+        <item>@string/four_quote</item>
+        <item>@string/five_and_one_third</item>
+        <item>@string/six_and_two_third</item>
+        <item>@string/eigth_quote</item>
+        <item>@string/ten_and_two_third</item>
+        <item>@string/thirteen_and_one_third</item>
+        <item>@string/fifteen_quote</item>
+        <item>@string/twenty_quote</item>
+        <item>@string/twentyfive_quote</item>
+        <item>@string/thirty_quote</item>
+        <item>@string/forty_quote</item>
+        <item>@string/fifty_quote</item>
+        <item>@string/s1_min</item>
+        <item>@string/s1_min_20</item>
+        <item>@string/s1_min_40</item>
+        <item>@string/s2_min_05</item>
+        <item>@string/s2_min_45</item>
+        <item>@string/s3_min_30</item>
+        <item>@string/s4_min_20</item>
+        <item>@string/s5_min_45</item>
+        <item>@string/s7_min_10</item>
+        <item>@string/s8_min_30</item>
+        <item>@string/s11_min_15</item>
+        <item>@string/s14_min_15</item>
+        <item>@string/s17_min</item>
+        <item>@string/s22_min_45</item>
+        <item>@string/s28_min_15</item>
+        <item>@string/s34_min</item>
+        <item>@string/s45_min_30</item>
+        <item>@string/s56_min_30</item>
+        <item>@string/s68_min</item>
+        <item>@string/s90_min_30</item>
+        <item>@string/s113_min_30</item>
+    </string-array>
+
+    <!-- Icons -->
+
+    <string name="icon_bomb">&#xe000;</string>
+    <string name="icon_contrast">&#xe001;</string>
+    <string name="icon_stopwatch">&#xe002;</string>
+    <string name="icon_connection">&#xe003;</string>
+    <string name="icon_camera">&#xe005;</string>
+    <string name="icon_mobile">&#xe006;</string>
+    <string name="icon_lamp">&#xe007;</string>
+    <string name="icon_brightness_high">&#xe008;</string>
+    <string name="icon_equalizer">&#xe009;</string>
+    <string name="icon_wrench">&#xe00a;</string>
+    <string name="icon_cog">&#xe00b;</string>
+    <string name="icon_cog2">&#xe00c;</string>
+    <string name="icon_settings">&#xe00d;</string>
+    <string name="icon_cogs">&#xe00e;</string>
+    <string name="icon_direction">&#xe00f;</string>
+    <string name="icon_point_down">&#xe010;</string>
+    <string name="icon_happy">&#xe011;</string>
+    <string name="icon_image">&#xe013;</string>
+    <string name="icon_camera2">&#xe014;</string>
+    <string name="icon_camera3">&#xe015;</string>
+    <string name="icon_target">&#xe016;</string>
+    <string name="icon_wave">&#xe017;</string>
+    <string name="icon_support">&#xe018;</string>
+    <string name="icon_cart">&#xe019;</string>
+    <string name="icon_alarm">&#xe01a;</string>
+    <string name="icon_rocket">&#xe01b;</string>
+    <string name="icon_eye">&#xe01c;</string>
+    <string name="icon_arrow_left">&#xe01d;</string>
+    <string name="icon_arrow_right">&#xe01e;</string>
+    <string name="icon_arrow_up">&#xe01f;</string>
+    <string name="icon_arrow_down">&#xe020;</string>
+    <string name="icon_arrow_left2">&#xe021;</string>
+    <string name="icon_arrow_down2">&#xe022;</string>
+    <string name="icon_arrow_right2">&#xe023;</string>
+    <string name="icon_arrow_up2">&#xe024;</string>
+    <string name="icon_seven_segment0">&#xe025;</string>
+    <string name="icon_seven_segment1">&#xe026;</string>
+    <string name="icon_seven_segment2">&#xe027;</string>
+    <string name="icon_seven_segment3">&#xe028;</string>
+    <string name="icon_seven_segment4">&#xe029;</string>
+    <string name="icon_seven_segment5">&#xe02a;</string>
+    <string name="icon_seven_segment6">&#xe02b;</string>
+    <string name="icon_seven_segment7">&#xe02c;</string>
+    <string name="icon_seven_segment8">&#xe02d;</string>
+    <string name="icon_seven_segment9">&#xe02e;</string>
+    <string name="icon_share">&#xe02f;</string>
+    <string name="icon_book">&#xe030;</string>
+    <string name="icon_arrow_right3">&#xe031;</string>
+    <string name="icon_arrow_right4">&#xe032;</string>
+    <string name="icon_lamp2">&#xe033;</string>
+    <string name="icon_star">&#xe034;</string>
+    <string name="icon_calculate">&#xe035;</string>
+    <string name="icon_mic">&#xe06c;</string>
+    <!-- <string name="icon_star">&#xe2ff;</string> -->
+    <string name="icon_brightness_contrast">&#xe2f7;</string>
+    <!-- <string name="icon_lamp">&#xe24d;</string> -->
+    <string name="icon_busy">&#xe1a3;</string>
+    <string name="icon_busy2">&#xe1a4;</string>
+    <string name="icon_lock">&#xe1d1;</string>
+    <string name="icon_download">&#xe2c2;</string>
+    <string name="icon_upload">&#xe2c3;</string>
+    <string name="icon_pie">&#xe1f9;</string>
+    <!-- <string name="icon_book">&#xe070;</string> -->
+    <!-- <string name="icon_connection">&#xe067;</string> -->
+    <string name="icon_menu">&#xe2ac;</string>
+    <string name="icon_menu2">&#xe2af;</string>
+    <string name="icon_cube">&#xe267;</string>
+    <string name="icon_cube2">&#xe266;</string>
+    <string name="icon_stop">&#xe382;</string>
+    <string name="icon_notification">&#xe358;</string>
+    <string name="icon_notification2">&#xe357;</string>
+    <string name="icon_warning">&#xe356;</string>
+    <string name="icon_warning2">&#xe355;</string>
+    <string name="icon_info">&#xe362;</string>
+    <string name="icon_info2">&#xe363;</string>
+    <string name="icon_history">&#xe0ff;</string>
+    <string name="icon_history2">&#xe100;</string>
+    <string name="icon_compass">&#xe0f9;</string>
+    <string name="icon_user">&#xe18e;</string>
+    <string name="icon_watch">&#xe105;</string>
+    <string name="icon_watch2">&#xe600;</string>
+
+    <string-array name="tt_welcome_mode_icons">
+        <item>@string/icon_arrow_right4</item>
+        <item>@string/icon_cart</item>
+    </string-array>
+    <string-array name="tt_cable_mode_icons">
+        <item>@string/icon_point_down</item>
+        <item>@string/icon_download</item>
+        <item>@string/icon_lock</item>
+        <item>@string/icon_busy2</item>
+    </string-array>
+    <string-array name="tt_timer_mode_icons">
+        <item>@string/icon_stopwatch</item>
+        <item>@string/icon_wave</item>
+        <item>@string/icon_compass</item>
+        <item>@string/icon_star</item>
+        <item>@string/icon_brightness_contrast</item>
+    </string-array>
+    <string-array name="tt_sound_mode_icons">
+        <item>@string/icon_mic</item>
+    </string-array>
+    <string-array name="tt_hdr_mode_icons">
+        <item>@string/icon_contrast</item>
+        <item>@string/icon_pie</item>
+    </string-array>
+    <string-array name="tt_remote_trigger_mode_icons">
+        <item>@string/icon_connection</item>
+        <item>@string/icon_watch2</item>
+    </string-array>
+    <string-array name="tt_calculators_mode_icons">
+        <item>@string/icon_brightness_high</item>
+        <item>@string/icon_pie</item>
+    </string-array>
+    <string-array name="tt_settings_mode_icons">
+        <item>@string/icon_connection</item>
+    </string-array>
+
+</resources>

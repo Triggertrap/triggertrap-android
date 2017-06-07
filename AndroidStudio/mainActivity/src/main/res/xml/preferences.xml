@@ -1,0 +1,59 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="pref_key_pulse_settings"
+        android:title="@string/general">
+        <ListPreference
+            android:defaultValue="@integer/default_pulse_length"
+            android:entries="@array/pref_shutter_setting_labels"
+            android:entryValues="@array/pref_shutter_setting_values"
+            android:key="pref_pulse_length_setting"
+            android:summary="@string/set_the_trigger_pulse_length"
+            android:title="@string/trigger_pulse_length" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_sensor_settings"
+        android:title="@string/sensors">
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_sensor_delay_setting_labels"
+            android:entryValues="@array/pref_sensor_delay_setting_values"
+            android:key="pref_sensor_delay_setting"
+            android:title="@string/sensor_delay" />
+        <ListPreference
+            android:defaultValue="1000"
+            android:entries="@array/pref_sensor_reset_delay_setting_labels"
+            android:entryValues="@array/pref_sensor_reset_delay_setting_values"
+            android:key="pref_sensor_reset_delay_setting"
+            android:title="@string/sensor_reset_delay" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_distance_settings"
+        android:title="@string/distance">
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/pref_distance_speed_labels"
+            android:entryValues="@array/pref_distance_speed_values"
+            android:key="pref_distance_speed_setting"
+            android:summary="@string/kilometers_per_hour"
+            android:title="@string/speed_unit" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_distance_unit_labels"
+            android:entryValues="@array/pref_distance_unit_values"
+            android:key="pref_distance_unit_setting"
+            android:summary="@string/meters_kilometers"
+            android:title="@string/distance_unit_s_" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:title="@string/about">
+        <Preference
+            android:key="pref_key_version"
+            android:summary="@string/installed_app_verison"
+            android:title="@string/version" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

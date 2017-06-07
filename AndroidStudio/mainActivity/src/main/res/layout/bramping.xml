@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tt_vlight_grey"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/brampTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/brampInputs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/exposuresText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="@string/exposures_"
+                        android:textColor="@color/tt_dark_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <include
+                        android:id="@+id/brampIterations"
+                        layout="@layout/numeric_input_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/activity_vertical_margin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/durationText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="@string/interval_"
+                        android:textColor="@color/tt_dark_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <include
+                        android:id="@+id/brampExposure"
+                        layout="@layout/time_picker_no_hours_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/activity_vertical_margin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="@string/duration_"
+                        android:textColor="@color/tt_dark_grey"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/duratationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text=""
+                        android:textColor="@color/tt_dark_grey"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/startText"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="@string/start_"
+                        android:textColor="@color/tt_dark_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <include
+                        android:id="@+id/brampStartExposure"
+                        layout="@layout/tt_horizontal_picker" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/endText"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text="@string/end_"
+                        android:textColor="@color/tt_dark_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <include
+                        android:id="@+id/brampEndExposure"
+                        layout="@layout/tt_horizontal_picker" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/circularTimer"
+                layout="@layout/sequence_timer"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/tt_dark_grey" />
+
+    <FrameLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/tt_light_grey">
+
+        <com.triggertrap.widget.OngoingButton
+            android:id="@+id/brampingButton"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            tt:toggle="true" />
+    </FrameLayout>
+
+</com.triggertrap.view.TTLinearLayout>

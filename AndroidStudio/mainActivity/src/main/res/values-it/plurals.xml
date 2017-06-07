@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <plurals name="numberOfMinutes">
+        <item quantity="one">%d minuti e</item>
+        <item quantity="other">%d minuti e</item>
+    </plurals>
+    <plurals name="numberOfStops">
+        <item quantity="one">%d stop</item>
+        <item quantity="other">%d stop</item>
+    </plurals>
+    <plurals name="numberOfHours">
+        <item quantity="one">%d ora</item>
+        <item quantity="other">%d ore</item>
+    </plurals>
+    <plurals name="numberOfSeconds">
+        <item quantity="one">%d secondo.</item>
+        <item quantity="other">%d secondi.</item>
+    </plurals>
+</resources>

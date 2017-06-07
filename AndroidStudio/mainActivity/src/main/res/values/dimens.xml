@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Cable Release modes -->
+    <dimen name="title_text_size">20sp</dimen>
+
+    <!-- Draw margins and padding -->
+    <dimen name="drawlist_left_padding">8dp</dimen>
+    <dimen name="drawlist_header_top_padding">15dp</dimen>
+    <dimen name="drawlist_header_bottom_padding">15dp</dimen>
+    <dimen name="drawlist_item_top_padding">5dp</dimen>
+    <dimen name="drawlist_item_bottom_padding">0dp</dimen>
+
+    <!-- Error dialog size -->
+    <dimen name="text_error_width">150dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="text_size_massive">60sp</dimen>
+    <dimen name="text_size_extremly_large">38sp</dimen>
+    <dimen name="text_size_very_large">34sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+
+    <!-- Status bar -->
+    <dimen name="status_bar_height">48dp</dimen>
+
+    <!-- Time picker dimensions -->
+    <dimen name="timer_padding_left">16dip</dimen>
+    <dimen name="big_font_size">120dp</dimen>
+    <dimen name="very_small_font_size">32sp</dimen>
+    <dimen name="small_font_size">40sp</dimen>
+    <dimen name="medium_font_size">48sp</dimen>
+    <dimen name="label_font_size">14sp</dimen>
+    <dimen name="header_font_size">24sp</dimen>
+    <dimen name="body_font_size">18sp</dimen>
+    <dimen name="medium_font_padding">12dp</dimen>
+    <dimen name="body_font_padding">4dp</dimen>
+
+    <!-- Dial pad dimensions specify in dp as we don't want it to scale when font settings are changed-->
+    <dimen name="dialpad_font_size">40dp</dimen>
+
+    <!-- Circle timer view dimensions -->
+    <dimen name="timer_circle_width">350dip</dimen>
+    <dimen name="timer_circle_diameter">300dip</dimen>
+    <dimen name="circletimer_circle_stroke_size">1dip</dimen>
+    <dimen name="circletimer_circle_stroke_progress_size">2dip</dimen>
+    <dimen name="circletimer_diamond_size">9dip</dimen>
+    <dimen name="circletimer_marker_size">16dip</dimen>
+
+    <dimen name="simple_label_font_size">8sp</dimen>
+</resources>

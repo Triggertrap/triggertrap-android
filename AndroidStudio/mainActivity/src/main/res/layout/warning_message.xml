@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginBottom="48dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000">
+
+        <LinearLayout
+            android:id="@+id/xsaxsa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/warningTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/volume_warning_title"
+                android:textColor="@color/tt_white"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/warningMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/volume_warning_message"
+                android:textColor="@color/tt_medium_grey"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:paddingRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/dismissWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="X"
+                android:textColor="@color/tt_medium_grey"
+                android:textSize="30sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/card_shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/card_shadow" />
+
+</LinearLayout>

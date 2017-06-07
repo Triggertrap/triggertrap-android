@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tt_vlight_grey"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/distanceTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/distanceInputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/distanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="@string/trigger_the_shutter"
+                android:textColor="@color/tt_dark_grey"
+                android:textSize="@dimen/text_size_medium" />
+
+            <include
+                android:id="@+id/distance"
+                layout="@layout/numeric_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin" />
+
+            <TextView
+                android:id="@+id/distanceText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="@string/meters"
+                android:textColor="@color/tt_dark_grey"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/distanceProgress"
+            layout="@layout/distance_progress"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/tt_dark_grey" />
+
+    <FrameLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_weight="2"
+        android:background="@color/tt_light_grey">
+
+        <com.triggertrap.widget.OngoingButton
+            android:id="@+id/distanceLapseButton"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            tt:toggle="true" />
+    </FrameLayout>
+
+</com.triggertrap.view.TTLinearLayout>

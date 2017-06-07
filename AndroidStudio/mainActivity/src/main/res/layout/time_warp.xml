@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tt_vlight_grey"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/starTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.triggertrap.widget.BezierWidget
+            android:id="@+id/bezierWidget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="70dp" />
+
+        <include
+            android:id="@+id/exposureDuration"
+            layout="@layout/exposure_duration" />
+
+        <include
+            android:id="@+id/timeWarpSettings"
+            layout="@layout/time_warp_settings"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/circularTimer"
+            layout="@layout/sequence_timer"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/tt_dark_grey" />
+
+    <FrameLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/tt_light_grey">
+
+        <com.triggertrap.widget.OngoingButton
+            android:id="@+id/timeWarpButton"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            tt:toggle="true" />
+
+        <com.triggertrap.view.AnalogClockPreview
+            android:id="@+id/analogClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:textColor="@color/tt_white"
+            android:background="@drawable/preview_icon"
+            android:id="@+id/previewTimeWarp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top|right" />
+
+
+    </FrameLayout>
+
+</com.triggertrap.view.TTLinearLayout>

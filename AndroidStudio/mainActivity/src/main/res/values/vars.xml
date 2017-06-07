@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_pulse_length">150</integer>
+
+    <integer-array name="shutter_speed_values">
+        <item>67</item>
+        <item>77</item>
+        <item>100</item>
+        <item>125</item>
+        <item>167</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1300</item>
+        <item>1600</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3200</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>8000</item>
+        <item>10000</item>
+        <item>13000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>30000</item>
+        <item>40000</item>
+        <item>50000</item>
+        <item>60000</item>
+        <item>80000</item>
+        <item>100000</item>
+        <item>125000</item>
+        <item>166667</item>
+        <item>208333</item>
+        <item>258000</item>
+        <item>344000</item>
+        <item>430000</item>
+        <item>510000</item>
+        <item>680000</item>
+        <item>850000</item>
+        <item>1020000</item>
+        <item>1360000</item>
+        <item>1700000</item>
+        <item>2040000</item>
+        <item>2720000</item>
+        <item>3400000</item>
+        <item>4080000</item>
+        <item>5440000</item>
+        <item>6800000</item>
+    </integer-array>
+
+
+</resources>

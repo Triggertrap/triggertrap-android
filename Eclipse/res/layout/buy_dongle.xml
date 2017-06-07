@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tt_vlight_grey"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/gettingStartedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/buy_the_dongle"
+        android:textColor="@color/tt_dark_red"
+        android:textSize="@dimen/text_size_very_large" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/buyHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/to_connect_the_triggertrap_mobile"
+                android:textColor="@color/tt_dark_grey"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/buyBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/you_can_buy_our_kits"
+                android:textColor="@color/tt_dark_grey"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" >
+
+        <TextView
+            android:id="@+id/buyFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/to_find_out_exactly"
+            android:textColor="@color/tt_dark_red"
+            android:textSize="@dimen/text_size_medium" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buyDongleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_selector"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/take_me_there"
+        android:textColor="@color/tt_dark_grey"
+        android:textStyle="bold" />
+
+</com.triggertrap.view.TTLinearLayout>

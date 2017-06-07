@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/this_is_a_beta_"
+        android:textColor="@color/tt_dark_red"
+        android:textSize="@dimen/text_size_very_large" />
+
+    <TextView
+        android:id="@+id/welcomeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/you_ve_installed_a_beta_version"
+        android:textColor="@color/tt_dark_grey"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/welcomeBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/of_course_given_that_this_is_a"
+        android:textColor="@color/tt_dark_grey"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/buyFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/got_it_awesome_enough_babble_already_"
+        android:textColor="@color/tt_dark_red"
+        android:textSize="@dimen/text_size_medium" />
+
+    <Button
+        android:id="@+id/welcomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_selector"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/let_s_get_triggering_"
+        android:textColor="@color/tt_dark_grey"
+        android:textStyle="bold" />
+
+</LinearLayout>

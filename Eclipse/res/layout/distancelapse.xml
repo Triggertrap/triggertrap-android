@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="DistanceLapse place holder......." />
+
+    <Button
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/startLocationService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start" />
+
+    <Button
+        android:layout_gravity="center_horizontal|bottom"
+        android:id="@+id/stopLocationService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop" />
+
+    <com.triggertrap.widget.VerticalSeekBar
+        android:layout_marginLeft="20dp"
+        android:id="@+id/verticalSeekBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

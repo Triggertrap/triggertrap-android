@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Middle exposure" />
+
+    <SeekBar
+        android:id="@+id/hdr_middle_exposure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+       
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/hdr_middle_exposure_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1" />
+
+    <SeekBar
+        android:id="@+id/hdr_number_exposures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:max="10"
+        android:progress="3" />
+
+    <TextView
+        android:id="@+id/hdr_number_exposures_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/startService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Start HDR sequence" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/hdr_progress_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/hdr_time_to_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0" />
+
+</LinearLayout>

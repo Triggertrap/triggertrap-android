@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/status_bar_height"
+    android:layout_gravity="bottom"
+    android:background="@color/dark_grey"
+    android:visibility="visible">
+
+    <ProgressBar
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/status_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="@string/triggertrap_idle" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/tt_black"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp" />
+
+    <ImageView
+        android:id="@+id/stopRunningAction"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/tt_dark_grey"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+</LinearLayout>

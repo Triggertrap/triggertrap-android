@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Triggertrap</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="nav_drawer_open">Triggertrap</string>
+    <string name="unknown">Sconosciuto</string>
+    <!--Mode titles-->
+    <string name="welcome">Benvenuto</string>
+    <string name="cable_release_modes">Modalit&#224; di scatto</string>
+    <string name="timelapse_modes">Modalit&#224; Timelapse </string>
+    <string name="sound_mode">Modalit&#224; audio</string>
+    <string name="hdr_modes">Modalit&#224; HDR</string>
+    <string name="remote_triggers">Attivazioni remote</string>
+    <string name="output_settings">Impostazioni output</string>
+    <string name="calculators">Calcolatori</string>
+    <!--Welcome modes-->
+    <string name="getting_started">Per iniziare</string>
+    <string name="cable_selector">Selettore Cavo</string>
+    <!--Cable release modes-->
+    <string name="simple_cable_release">Telecomando via cavo</string>
+    <string name="quick_release">Rilascio rapido</string>
+    <string name="press_and_hold">Premi e tieni premuto</string>
+    <string name="press_to_lock">Premi e blocca</string>
+    <string name="timed_release">Rilascio temporizzato</string>
+    <string name="self_timer">Autoscatto</string>
+    <!--Timer modes-->
+    <string name="timelapse">Timelapse</string>
+    <string name="timewarp">TimeWarp</string>
+    <string name="distancelapse">DistanceLapse</string>
+    <string name="star_trail">Star Trail</string>
+    <string name="bramping">Bramping</string>
+    <!--Sound modes-->
+    <string name="sound_sensor">Sensore di suono</string>
+    <!--HDR modes-->
+    <string name="le_hdr">LE HDR</string>
+    <string name="le_hdr_timelapse">LE HDR Timelapse</string>
+    <!--Remote trigger modes-->
+    <string name="wifi_slave">Wi-Fi Slave</string>
+    <string name="pebble">Pebble</string>
+    <!--Output settings modes-->
+    <string name="wifi_master">Wi-Fi Master</string>
+    <!--Calculators Modes-->
+    <string name="sunrise_sunset">Calcolatore solare</string>
+    <string name="nd_calculator">Calcolatore ND</string>
+    <!--Welcome modes sub text-->
+    <string name="a_quick_guide">Guida pratica</string>
+    <string name="get_the_right_kit">Scegli il kit giusto per il lavoro</string>
+    <!--Cable release modes sub text-->
+    <string name="tap_the_button_to_take_a_picture">Premi per scattare</string>
+    <string name="release_button_to">Rilascia per scattare </string>
+    <string name="touch_to_start_release_to_stop">Premi (inizia), lascia (stop)</string>
+    <string name="touch_to_start_touch_to_stop">Premi (inizia), premi (stop)</string>
+    <string name="choose_your_shutter_speed">Scegli la velocit&#224; dell\'otturatore</string>
+    <string name="countdown_before">Foto in 3, 2, 1 ...</string>
+    <!--Timer modes sub text-->
+    <string name="travel_through_time">Viaggio nel tempo</string>
+    <string name="timelapse_with_acceleration">Timelapse accelerato</string>
+    <string name="perfect_for_roadtrips">Perfetto per viaggi su strada</string>
+    <string name="extreme_exposure_control">Controllo esposizione estrema</string>
+    <string name="bulb_ramping_timelapse">Bulb ramping timelapse</string>
+    <!--Sound modes sub text-->
+    <string name="clap_whistle_or_tap">Batti, fischia o tap</string>
+    <!--HDR modes sub text-->
+    <string name="long_exposure_hdr_sets">Set di HDR a lunga esposizione</string>
+    <string name="long_exposure_hdr_timelapse">Timelapse HDR (e.l.)</string>
+    <string name="hdr_error_title">Errore nelle impostazioni HDR</string>
+    <string name="hdr_error">Le impostazioni HDR hanno generato risultati non validi. Provare ad aumentare l\'esposizione media o a diminuire il numero di esposizioni e di stop.</string>
+    <!--Remote trigger modes sub text-->
+    <string name="trigger_remotely">Trigger remoto</string>
+    <string name="trigger_with_your_pebble">Attivare con il Pebble</string>
+    <!--Calculator modes sub text-->
+    <string name="determine_sunrise_sunset">Calcolatore di alba e tramonto</string>
+    <string name="determine_nd">Calcolatore del filtro ND</string>
+    <!--Output settings modes sub text-->
+    <string name="take_control">Prendi il controllo</string>
+    <!--Notifications-->
+    <string name="running_press_to_start_and_stop">Esecuzione di pressione e blocco</string>
+    <string name="running_timed">Esecuzione temporizzata</string>
+    <string name="running_timelapse">Esecuzione Timelapse</string>
+    <string name="running_timewarp">Esecuzione TimeWarp</string>
+    <string name="running_star_trail">Esecuzione Star trail</string>
+    <string name="running_bramping">Esecuzione Bramping</string>
+    <string name="running_sound_trigger">Esecuzione attivazione sonora</string>
+    <string name="running_distance_lapse">Esecuzione DistanceLapse</string>
+    <string name="running_hdr">Esecuzione HDR&#160;</string>
+    <string name="running_hdr_timelapse">Esecuzione Timelapse HDR</string>
+    <string name="running_self_timer">Esecuzione Autoscatto</string>
+    <string name="running_wifi_slave">Esecuzione Wi-Fi Slave</string>
+    <string name="running_pebble">Esecuzione Pebble</string>
+    <!--Cable modes-->
+    <string name="simple">Premere il pulsante rosso perch&#233; avvenga la magia</string>
+    <string name="press_hold_text">Toccare il pulsante per aprire l\'otturatore della fotocamera. Per terminare l\'esposizione basta rilasciarlo. </string>
+    <string name="press_start_text">Toccare il pulsante per aprire l\'otturatore della fotocamera. Quando hai finito, toccare di nuovo per terminare l\'vostra esposizione. Facile!</string>
+    <string name="press_to_start">Premere per aprire l\'otturatore e premere ancora per chiudere l\'otturatore</string>
+    <string name="timed">Selezionare la velocit&#224; preferita dell\'otturatore. Premere il pulsante. Rilassati, l\'esposizione termina quando il timer &#232; a zero.</string>
+    <string name="self_timer_text">Impostare il tempo, premere il pulsante rosso e mettersi in posa!</string>
+    <string name="quick_release_text">Tenere premuto il pulsante, aspettare il momento giusto, e rilasciare!</string>
+    <string name="shutter">otturatore</string>
+    <string name="start">Inizio</string>
+    <string name="stop">Stop</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annullare</string>
+    <string name="yes">S&#236;</string>
+    <string name="no">No</string>
+    <!--Time lapse-->
+    <string name="time_lapse">Imposta un intervallo di tempo per ogni scatto della tua timelapse</string>
+    <string name="time_lapse_error">L\'intervallo timelapse &#232; pi&#249; breve della la lunghezza della tua pressione!</string>
+    <!--Timer strings-->
+    <string name="hours_label">h</string>
+    <string name="minutes_label">m</string>
+    <string name="seconds_label">s</string>
+    <!--Distance Lapse-->
+    <string name="google_play_error_title">Triggertrap utilizza Google Play Services</string>
+    <string name="google_play_error_description">Triggertrap utilizza il servizio Google Play Location per ottenere informazioni sulla posizione. Non &#232; possibile utilizzare Distance Lapse senza un\'account Google Play valido account o senza aver installato l\'app Google Play.</string>
+    <string name="connect_error_title">Errore di connessione dei servizi Google Play</string>
+    <string name="connect_error_description">Triggertrap utilizza Google Play Services per trovare la tua posizione. Non siamo riusciti a connetterci. Vuoi provare di nuovo?</string>
+    <!--Status bar-->
+    <string name="triggertrap_idle">Triggertrap &#232; inattivo</string>
+    <!--Wifi slave-->
+    <string name="in_wifi_slave">In modalit&#224; slave Wi-Fi stiamo usando un altro dispositivo mobile Triggertrap come trigger. Collegare al dispositivo Master, e attendere che l\'altro dispositivo attivi questa fotocamera. Forte, eh? Premere il pulsante rosso per avviare la ricerca</string>
+    <string name="no_devices_found">NESSUN DISPOSITIVO TROVATO</string>
+    <string name="master_devices">DISPOSITIVI MASTER</string>
+    <string name="wi_fi_slave">Wi-Fi Slave</string>
+    <string name="Connected_to">Collegato a:</string>
+    <string name="unconnected">DISCONNESSO</string>
+    <!--Pebble-->
+    <string name="in_pebble">Per installare l\'app Triggertrap Pebble sull\'orologio selezionare \'Install Pebble App\' nel menu Azione. In modalit&#224; Pebble stiamo usando uno SmartWatch Pebble come trigger. Connettersi ad un Pebble, e attendere attivi questa fotocamera. Forte, eh? Premere il pulsante rosso per iniziare ad ascoltare</string>
+    <!--Wifi Master-->
+    <string name="flick_the_switch">Spostare l\'interruttore su \'on\' per diventare visibile ad altri Triggertrap Mobile attivi sulla tua rete Wi-Fi. Quando si connettono al tuo dispositivo, potrai azionare le loro fotocamere in modalit&#224; wireless.</string>
+    <string name="connected_slave_devices">DISPOSITIVI SLAVE CONNESSI</string>
+    <string name="disconnect_slave_device">Disconnettere il dispositivo slave</string>
+    <string name="do_you_want_to_slave_device">Vuoi disconnettere questo dispositivo slave?</string>
+    <string name="running_wifi_master">Esecuzione Wi-Fi Master</string>
+    <string name="my_name_is">Il mio nome &#232;</string>
+    <!--Bang (Sound trigger) mode-->
+    <string name="bang">Bang</string>
+    <string name="sensitivity">Sensibilit&#224;</string>
+    <!--Star trial-->
+    <string name="exposures_of_duration">Esposizioni di durata</string>
+    <string name="with_a_gap_between">con una distanza tra ciascuno di</string>
+    <!--Distance lapse-->
+    <string name="trigger_the_shutter">Attivare l\'otturatore ogni</string>
+    <string name="meters">metri</string>
+    <string name="yards">iarde</string>
+    <!--Le Hdr-->
+    <string name="middle_exposure">Esposizione media</string>
+    <string name="number_of_exposures">Numero di esposizioni</string>
+    <!--Le Hdr timelapse-->
+    <string name="time_lapse_interval">Intervallo di Time Lapse</string>
+    <string name="ev_step">Numero di stop</string>
+    <!--Timewarp-->
+    <string name="take">Scatta</string>
+    <string name="exposures_over">Numero di esposizioni</string>
+    <!--Bramping-->
+    <string name="interval_">Intervallo:</string>
+    <string name="start_">Inizio:</string>
+    <string name="end_">Fine:</string>
+    <!--Pebble-->
+    <string name="trigger">Trigger</string>
+    <string name="listening_for_pebble_trigger">In attesa del trigger Pebble</string>
+    <string name="install_pebble_app">Installare l\'app Pebble</string>
+    <!--Solar Event Calendar-->
+    <string name="first_light_at">Prima luce alle</string>
+    <string name="last_light_at">Ultima luce alle</string>
+    <string name="hrs">ore</string>
+    <string name="hr">ora</string>
+    <string name="mins">minuti e</string>
+    <string name="min">minuto e</string>
+    <string name="scnd">secondo.</string>
+    <string name="scnds">secondi.</string>
+    <string name="in">in</string>
+    <string name="next_sunset">Tramonto di domani</string>
+    <string name="next_sunrise">Alba di domani</string>
+    <string name="sunrise">Alba di oggi</string>
+    <string name="sunset">Tramonto di stasera</string>
+    <string name="finding_loc">Ricerca posizione...</string>
+    <string name="loc_not_found">Controllare i servizi di localizzazione e riprovare.</string>
+    <!--ND Calculator-->
+    <string name="shutter_speed_with">Velocit&#224; otturatore con</string>
+    <string name="sec">sec</string>
+    <string name="nd_filter_strength">Forza del filtro ND</string>
+    <string name="base_shutter_speed">Velocit&#224; di base dell\'otturatore</string>
+    <string name="nd_filter_end">Filtro:</string>
+    <!--Preferences (Settings)-->
+    <string name="general">GENERALE</string>
+    <string name="sensors">SENSORI</string>
+    <string name="set_the_trigger_pulse_length">Impostare la lunghezza di pressione del trigger</string>
+    <string name="trigger_pulse_length">Lunghezza di pressione del trigger</string>
+    <string name="set_sensor_delays">Impostare i ritardi del sensore</string>
+    <string name="about">INFORMAZIONI</string>
+    <string name="version">Versione</string>
+    <string name="installed_app_verison">Versione dell\'app installata</string>
+    <string name="distance">DISTANZA</string>
+    <string name="sensor_reset_delay">Reset del sensore di ritardo</string>
+    <string name="sensor_delay">Sensore di ritardo</string>
+    <string name="speed_unit">Unit&#224; di velocit&#224;</string>
+    <string name="distance_unit_s_">Unit&#224; di distanza</string>
+    <string name="kilometers_per_hour">Chilometri all\'ora</string>
+    <string name="meters_kilometers">Metri/Chilometri</string>
+    <string name="miles_yards">Miglia/Iarde</string>
+    <string name="miles_per_hour">Miglia all\'ora</string>
+    <string name="meters_per_second">Metri al secondo</string>
+    <string name="km_h">km/h</string>
+    <string name="mph">mph</string>
+    <string name="m_s">m/s</string>
+    <string name="meter_abrievation">m</string>
+    <string name="yard_abrievation">yd</string>
+    <!--Shutter (Settings)-->
+    <string name="flash_shutter">30 ms - Flash</string>
+    <string name="one_fifty_shutter">150 ms - fotocamera</string>
+    <string name="five_hundred_shutter">500 ms - fotocamera lenta</string>
+    <string name="one_thousand_shutter">1000 ms - fotocamera lenta</string>
+    <string name="one_thousand_five_hundred_shutter">1500 ms - fotocamera lenta</string>
+    <string name="three_thousand_shutter">3000 ms - fotocamera lenta</string>
+    <!--sensor delay (Settings)-->
+    <string name="zero_seconds">0 secondi</string>
+    <string name="zero_point_one_seconds">0,01 secondi</string>
+    <string name="zero_point_two_seconds">0,02 secondi</string>
+    <string name="zero_point_three_seconds">0,03 secondi</string>
+    <string name="zero_point_four_seconds">0,04 secondi</string>
+    <string name="zero_point_five_seconds">0,05 secondi</string>
+    <string name="zero_point_six_seconds">0,06 secondi</string>
+    <string name="zero_point_seven_seconds">0,07 secondi</string>
+    <string name="zero_point_eight_seconds">0,08 secondi</string>
+    <string name="zero_point_nine_seconds">0,09 secondi</string>
+    <string name="point_one_seconds">0,1 secondi</string>
+    <string name="point_two_seconds">0,2 secondi</string>
+    <string name="point_three_seconds">0,3 secondi</string>
+    <string name="point_four_seconds">0,4 secondi</string>
+    <string name="point_five_seconds">0,5 secondi</string>
+    <string name="point_six_seconds">0,6 secondi</string>
+    <string name="point_seven_seconds">0,7 secondi</string>
+    <string name="point_eight_seconds">0,8 secondi</string>
+    <string name="point_nine_seconds">0,9 secondi</string>
+    <string name="one_second">1 secondo</string>
+    <string name="two_seconds">2 secondi</string>
+    <string name="three_seconds">3 secondi</string>
+    <string name="four_seconds">4 secondi</string>
+    <string name="five_seconds">5 secondi</string>
+    <!--Getting started-->
+    <string name="welcome_to_triggertrap">Benvenuti su Triggertrap</string>
+    <string name="oh_hi_there">Ciao! Piacere di conoscerti.</string>
+    <string name="so_you_want">E cos&#236;, vuoi far scattare la tua fotocamera? Hai appena trasformato il tuo smartphone o tablet nel miglior dispositivo di scatto in vendita sul mercato. Congratulazioni per la tua scelta saggia.</string>
+    <string name="lets_get_started">Cominciamo, ok?</string>
+    <string name="navigating_the_app">Navigazione App</string>
+    <string name="in_triggertrap_mobile">In Triggertrap Mobile, troverete una raffinata selezione di gustose modalit&#224; di scatto. Sperimenta a tuo piacimento e porta la tua fotografia creativa ad alti livelli!</string>
+    <string name="you_can_access_each">&#200; possibile accedere ad ogni modalit&#224; dal menu sul lato sinistro sullo schermo. Per aprirlo, passare il dito dal lato sinistro dello schermo, o toccare il pulsantino del menu in alto.</string>
+    <string name="got_that_great">Capito? Ottimo! Ora colleghiamo la tua fotocamera...</string>
+    <string name="connecting_your_camera">Collegamento della fotocamera</string>
+    <string name="to_connect_the">Per collegare l\'app alla tua fotocamera, dovrai acquistare un Triggertrap Mobile Dongle Kit. Premere \'Cable Selector\' nel menu se non ne hai gi&#224; uno.</string>
+    <string name="remember_that_your">Ricorda che la fotocamera deve essere impostata sulla modalit&#224; focus manuale per funzionare con Triggertrap Mobile. Per fare ci&#242; normalmente &#232; necessario premere un tasto sul corpo macchina o sulla lente. Controlla il manuale di istruzioni della tua fotocamera se non sei sicuro di come disattivare l\'autofocus!</string>
+    <string name="get_more_help">Ottieni ulteriore aiuto</string>
+    <string name="did_you_know">Lo sapevi? Siamo le persone pi&#249; amichevoli al mondo (&#232; un fatto scientifico).</string>
+    <string name="if_you_get_stuck">Se qualcosa non va, se hai qualche idea che vuoi condividere o semplicemente se ti vanno due chiacchiere, ricorda che puoi contattarci a hello@tri.gg giorno e notte. </string>
+    <string name="anyway_enough_of">Comunque, bando alle ciance.</string>
+    <!--GPS enabled dialog-->
+    <string name="enable_gps">Attiva il GPS?</string>
+    <string name="gps_descripition">Triggertrap Distance Lapse funziona meglio quando il GPS &#232; abilitato sul dispositivo. Vuoi abilitare il GPS ora?</string>
+    <string name="exposures_">Esposizioni:</string>
+    <string name="duration_">Durata:</string>
+    <string name="exposure">Esposizione:</string>
+    <string name="pause">Pausa:</string>
+    <!--Beta-->
+    <string name="let_s_get_triggering_">Attiviamoci!</string>
+    <string name="would_you_like_to_stop_this_running_">Vuoi fermare questo processo?</string>
+    <string name="this_is_a_beta_">Questa &#232; una versione Beta!</string>
+    <string name="you_ve_installed_a_beta_version">Hai installato una versione Beta della nostra app Android. Il che &#232; parecchio interessante, perch&#233; ti mette in quella categoria che comprende l\'1% delle persone pi&#249; sexy al mondo.</string>
+    <string name="of_course_given_that_this_is_a">Naturalmente, dato che questa &#232; una beta, pu&#242; esserci qualche stranezza qua e l&#224;. Se vuoi aiutarci a migliorare l\'app Android, ti preghiamo di segnalare eventuali bug e inviare tutti i tuoi suggerimenti sul nostro forum Android dedicato (http://tri.gg/betaforum)</string>
+    <string name="got_it_awesome_enough_babble_already_">Capito? Ottimo. Abbiamo gi&#224; fatto abbastanza chiacchiere.</string>
+    <!--Volume warning toast messages-->
+    <string name="volume_warning_title">Imposta il volume al massimo!</string>
+    <string name="volume_warning_message">Triggertrap ha bisogno che il volume sia impostato al massimo</string>
+    <!--App rating Dialog strings-->
+    <string name="scope_dialog_title">Com\'&#232; l\'esperienza di Triggetrap?</string>
+    <string name="scope_dialog_message">Dicci cosa ne pensi.</string>
+    <string name="scope_positive">Lo adoro!</string>
+    <string name="scope_neutral">Mi piace</string>
+    <string name="scope_negative">Non eccezionale</string>
+    <string name="to_play_title">Wow! Vuoi recensire Triggertrap?</string>
+    <string name="to_play_message">Ci vorr&#224; solo un attimo.</string>
+    <string name="to_play_love_title">Che ne dici di battere un cinque per i nostri sviluppatori?</string>
+    <string name="to_play_love_message">Cinque stelle!</string>
+    <string name="to_play_positive">Certo</string>
+    <string name="to_play_neutral">Pi&#249; tardi</string>
+    <string name="to_play_negative">No grazie</string>
+    <string name="meh_message">Inviaci un\'e-mail e cercheremo rendere le cose migliori.</string>
+    <string name="meh_title">Oh no! Hai bisogno di aiuto?</string>
+    <string name="send_email">Scrivici</string>
+    <!--Cable Chooser-->
+    <string name="buy_cable_cb1">Acquista un cavo CB1</string>
+    <string name="buy_cable_dc0">Acquista un cavo DC0</string>
+    <string name="buy_cable_dc1">Acquista un cavo DC1</string>
+    <string name="buy_cable_dc2">Acquista un cavo DC2</string>
+    <string name="buy_cable_e3">Acquista un cavo E3</string>
+    <string name="buy_cable_l1">Acquista un cavo L1</string>
+    <string name="buy_cable_n3">Acquista un cavo N3</string>
+    <string name="buy_cable_nx">Acquista un cavo NX</string>
+    <string name="buy_cable_r9">Acquista un cavo R9</string>
+    <string name="buy_cable_s1">Acquista un cavo S1</string>
+    <string name="buy_cable_s2">Acquista un cavo S2</string>
+    <string name="buy_cable_uc1">Acquista un cavo UC1</string>
+
+    <string name="neutral_density_1024">ND1024</string>
+    <string name="neutral_density_1048576">ND1048576</string>
+    <string name="neutral_density_128">ND128</string>
+    <string name="neutral_density_131072">ND131072</string>
+    <string name="neutral_density_16">ND16</string>
+    <string name="neutral_density_16384">ND16384</string>
+    <string name="neutral_density_2">ND2</string>
+    <string name="neutral_density_2048">ND2048</string>
+    <string name="neutral_density_256">ND256</string>
+    <string name="neutral_density_262144">ND262144</string>
+    <string name="neutral_density_32">ND32</string>
+    <string name="neutral_density_32768">ND32768</string>
+    <string name="neutral_density_4">ND4</string>
+    <string name="neutral_density_4096">ND4096</string>
+    <string name="neutral_density_512">ND512</string>
+    <string name="neutral_density_524288">ND524288</string>
+    <string name="neutral_density_64">ND64</string>
+    <string name="neutral_density_65536">ND65536</string>
+    <string name="neutral_density_8">ND8</string>
+    <string name="neutral_density_8192">ND8192</string>
+</resources>

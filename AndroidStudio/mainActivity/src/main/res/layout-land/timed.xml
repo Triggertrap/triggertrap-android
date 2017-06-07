@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tt_vlight_grey"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/timedInputView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+
+        <TextView
+            android:id="@+id/timedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:text="@string/timed"
+            android:textColor="@color/tt_dark_grey"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/timedTimePicker"
+            layout="@layout/time_picker" />
+
+        <include
+            android:id="@+id/circularTimer"
+            layout="@layout/circle_timer"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/tt_dark_grey" />
+
+    <FrameLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/tt_light_grey">
+
+        <com.triggertrap.widget.OngoingButton
+            android:id="@+id/timedButton"
+            android:layout_width="223dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            tt:toggle="true" />
+    </FrameLayout>
+
+</com.triggertrap.view.TTLinearLayout>

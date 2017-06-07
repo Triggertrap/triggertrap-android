@@ -1,0 +1,181 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+
+    <style name="TTBaseTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- style the overflow menu -->
+    <style name="MyPopupMenu" parent="android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_tttheme</item>
+    </style>
+
+    <style name="TTActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/tt_red</item>
+        <item name="android:titleTextStyle">@style/TTBaseTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="TTNavDrawerTitleText">
+        <item name="android:fontFamily">sans-serif-dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/tt_black</item>
+        <item name="android:background">@color/tt_light_grey</item>
+        <item name="android:paddingTop">@dimen/drawlist_header_top_padding</item>
+        <item name="android:paddingBottom">@dimen/drawlist_header_bottom_padding</item>
+        <item name="android:paddingLeft">@dimen/drawlist_left_padding</item>
+    </style>
+
+    <style name="TTNavDrawerItemText" parent="TTNavDrawerTitleText">
+        <item name="android:textColor">@color/tt_black</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:background">@drawable/drawer_list_item_selector</item>
+        <item name="android:paddingTop">@dimen/drawlist_item_top_padding</item>
+        <item name="android:paddingBottom">@dimen/drawlist_item_bottom_padding</item>
+    </style>
+
+    <style name="TTNavDrawerItemSubText" parent="TTNavDrawerItemText">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/tt_dark_grey</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/drawer_list_item_selector</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">@dimen/drawlist_item_bottom_padding</item>
+    </style>
+
+    <style name="TTBangTitleText">
+        <item name="android:textColor">@color/tt_black</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">@dimen/text_size_extremly_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TTBangText">
+        <item name="android:textColor">@color/tt_dark_grey</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CountDownText">
+        <item name="android:textColor">@color/tt_white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SecondsText">
+        <item name="android:textColor">@color/tt_white</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.Tttheme.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:textColor">@color/tt_black</item>
+    </style>
+
+    <!-- The base style for the TT app -->
+    <style name="TTBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/TTActionBar</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.Tttheme.Widget</item>
+    </style>
+
+    <!-- Timer Styles -->
+    <style name="medium_bold">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="medium_light">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="small_light">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="small_bold">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="very_small_light">
+        <item name="android:textSize">@dimen/very_small_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!-- Dial pad -->
+    <style name="dialpad">
+        <item name="android:textColor">@color/tt_white</item>
+        <item name="android:textSize">@dimen/dialpad_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="sequenceLabels">
+        <item name="android:textColor">@color/tt_white</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="exposure_duration_lables">
+        <item name="android:textColor">@color/tt_white</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="exposure_duration_values">
+        <item name="android:textColor">@color/tt_white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="switch_text_appearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/tt_white</item>
+    </style>
+
+    <!-- Themed Dialog Style -->
+    <style name="DialogStyleLight.Custom">
+
+        <!-- anything can be left out: -->
+        <item name="titleTextColor">@color/tt_red</item>
+        <item name="titleSeparatorColor">@color/tt_red</item>
+        <item name="messageTextColor">@color/tt_dark_grey</item>
+        <item name="buttonTextColor">@color/tt_dark_grey</item>
+        <item name="buttonSeparatorColor">@color/tt_red</item>
+        <item name="buttonBackgroundColorNormal">@color/tt_white</item>
+        <item name="buttonBackgroundColorPressed">@color/tt_dark_red</item>
+        <item name="buttonBackgroundColorFocused">@color/tt_red</item>
+        <item name="dialogBackground">@color/tt_white</item>
+    </style>
+
+</resources>

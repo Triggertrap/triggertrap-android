@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="35dp"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:layout_height="wrap_content"   
+    android:orientation="horizontal" >
+
+    <com.triggertrap.widget.TimerView
+        android:id="@+id/timerTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:gravity="top|center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/grey_text_field"
+        android:paddingBottom="@dimen/medium_font_padding"     
+        android:paddingTop="@dimen/medium_font_padding" >
+
+        <com.triggertrap.view.ZeroTopPaddingTextView
+            android:id="@+id/hours_tens"
+            style="@style/medium_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/tt_dark_grey" />
+
+        <com.triggertrap.view.ZeroTopPaddingTextView
+            android:id="@+id/hours_ones"
+            style="@style/medium_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/tt_dark_grey" />
+
+        <com.triggertrap.view.ZeroTopPaddingTextView
+            android:id="@+id/hours_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/hours_label"
+            android:textColor="@color/tt_dark_grey" />
+
+        <com.triggertrap.view.ZeroTopPaddingTextView
+            android:id="@+id/minutes_tens"
+            style="@style/medium_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/tt_dark_grey" />
+
+        <com.triggertrap.view.ZeroTopPaddingTextView
+            android:id="@+id/minutes_ones"
+            style="@style/medium_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/tt_dark_grey" />
+
+        <com.triggertrap.view.ZeroTopPaddingTextView
+            android:id="@+id/minutes_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/minutes_label"
+            android:textColor="@color/tt_dark_grey" />
+
+        <com.triggertrap.view.ZeroTopPaddingTextView
+            android:id="@+id/seconds"
+            style="@style/medium_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="00"
+            android:textColor="@color/tt_dark_grey" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/seconds_label"
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/seconds_label"
+                android:textColor="@color/tt_dark_grey" />
+
+     
+        </FrameLayout>
+
+  
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/item_background"
+            android:gravity="center"
+            android:paddingBottom="@dimen/body_font_padding"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/ic_backspace" />
+
+    </com.triggertrap.widget.TimerView>
+
+</LinearLayout>

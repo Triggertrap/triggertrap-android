@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tt_vlight_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/tt_vlight_grey"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="@string/nd_filter_strength"
+                android:textColor="@color/tt_dark_grey"
+                android:textSize="@dimen/text_size_medium" />
+
+            <include
+                android:id="@+id/nd_filter_picker"
+                layout="@layout/tt_horizontal_picker" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="@string/base_shutter_speed"
+                android:textColor="@color/tt_dark_grey"
+                android:textSize="@dimen/text_size_medium" />
+
+            <include
+                android:id="@+id/base_shutter_speed_picker"
+                layout="@layout/tt_horizontal_picker" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/tt_medium_grey"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/shutter_speed_with"
+            android:textColor="@color/tt_red"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ndTFilterTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/tt_red"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/resultTextView"
+                style="@style/medium_bold"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sec"
+                android:layout_gravity="center"
+                android:textColor="@color/tt_red" />
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/result_label"
+                style="@style/label"
+                android:layout_toRightOf="@+id/resultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/hours_label"
+                android:textColor="@color/tt_red" />
+        </RelativeLayout>
+
+
+        <com.triggertrap.widget.TimerView
+            android:id="@+id/timerTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/medium_font_padding"
+            android:paddingTop="@dimen/medium_font_padding">
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/hours_tens"
+                style="@style/medium_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/tt_red" />
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/hours_ones"
+                style="@style/medium_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/tt_red" />
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/hours_label"
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/hours_label"
+                android:textColor="@color/tt_red" />
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/minutes_tens"
+                style="@style/medium_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/tt_red" />
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/minutes_ones"
+                style="@style/medium_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/tt_red" />
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/minutes_label"
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/minutes_label"
+                android:textColor="@color/tt_red" />
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/seconds"
+                style="@style/medium_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="00"
+                android:textColor="@color/tt_red" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.triggertrap.view.ZeroTopPaddingTextView
+                    android:id="@+id/seconds_label"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="@string/seconds_label"
+                    android:textColor="@color/tt_red" />
+
+                <com.triggertrap.view.ZeroTopPaddingTextView
+                    android:id="@+id/decimalPoint"
+                    style="@style/medium_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="."
+                    android:textColor="@color/tt_red" />
+            </FrameLayout>
+
+            <com.triggertrap.view.ZeroTopPaddingTextView
+                android:id="@+id/milliseconds"
+                style="@style/medium_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="1dp"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="00"
+                android:textColor="@color/tt_red" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/item_background"
+                android:gravity="center"
+                android:paddingBottom="@dimen/body_font_padding"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:src="@drawable/ic_backspace"
+                android:visibility="gone" />
+        </com.triggertrap.widget.TimerView>
+    </LinearLayout>
+
+</com.triggertrap.view.TTLinearLayout>

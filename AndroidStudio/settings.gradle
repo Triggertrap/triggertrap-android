@@ -1,0 +1,5 @@
+include ':pEBBLE_KIT'
+include ':pickerlibrary'
+include ':styledDialogsLib'
+include ':viewPagerIndicatorLib'
+include ':mainActivity'

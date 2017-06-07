@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.view.TTLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tt_vlight_grey"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/pressHoldText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/press_hold_text"
+                android:textColor="@color/tt_dark_grey"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/circularTimer"
+            layout="@layout/circle_timer"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@color/tt_dark_grey" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_weight="0.9"
+        android:background="@color/tt_light_grey">
+
+        <com.triggertrap.widget.OngoingButton
+            android:id="@+id/pressHoldButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="6dp" />
+    </FrameLayout>
+
+</com.triggertrap.view.TTLinearLayout>

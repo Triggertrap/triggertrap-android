@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark_grey">#ffcccccc</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- TT button colors -->
+    <color name="tt_button_outer_circle_color">#ffdbdbdb</color>
+    <color name="tt_button_circle_border_color">#ffc1241c</color>
+
+    <!-- Nav Draw colors -->
+    <color name="tt_drawer_header_bkgrd">#fff0f0f0</color>
+    <color name="item_sub_text_grey">#ffa6a4a4</color>
+
+    <!-- reds -->
+    <color name="tt_red">#ffe2231a</color>
+    <color name="tt_dark_red">#ffc1241c</color>
+    <color name="tt_very_dark_red">#ffad211a</color>
+
+    <color name="tt_red_10">#ffca1f17</color>
+    <color name="tt_red_20">#ffb31b14</color>
+    <color name="tt_red_30">#ff9e1812</color>
+    <color name="tt_red_40">#ff88150f</color>
+    <color name="tt_red_50">#ff71110d</color>
+    <color name="tt_red_60">#ff5a0e0a</color>
+
+
+    <!-- greys -->
+    <color name="tt_vlight_grey">#fff6f6f6</color>
+    <color name="tt_light_grey">#ffefefef</color>
+    <color name="tt_medium_grey">#ffdbdbdb</color>
+    <color name="tt_dark_grey">#ff838383</color>
+
+    <!--black  -->
+    <color name="tt_black">#ff313131</color>
+
+    <!-- white -->
+    <color name="tt_white">#fffdfdfd</color>
+
+    <!--transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_white">#66ffffff</color>
+
+</resources>

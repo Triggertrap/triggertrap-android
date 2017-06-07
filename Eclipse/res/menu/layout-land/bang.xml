@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tt="http://schemas.android.com/apk/res/com.triggertrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+   <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <com.triggertrap.view.ArcProgress
+        android:id="@+id/bangVolumeDisplay"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        tt:circleColor="#ffdfdfdf"
+        tt:clockwise="true"
+        tt:progressColor="@color/tt_red"
+        tt:progressWidth="12dp"
+        tt:rotation="180" />
+
+    <TextView
+        android:id="@+id/bangText"
+        style="@style/TTBangTitleText"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/bang" />
+
+    <com.triggertrap.widget.SeekArc
+        android:id="@+id/bangThreshold"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        tt:arcColor="#ffdfdfdf"
+        tt:arcRadius="90dp"
+        tt:arcWidth="3dp"
+        tt:max="100"
+        tt:progressColor="@color/tt_red"
+        tt:rotation="180"
+        tt:startAngle="30"
+        tt:sweepAngle="300"
+        tt:touchInside="true" />
+
+</FrameLayout>
+    
+    <include layout="@layout/bang_controls"/>
+
+</LinearLayout>

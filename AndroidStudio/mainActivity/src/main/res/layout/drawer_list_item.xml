@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/iconContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/drawlist_item_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/red_square"
+            android:tint="#00000000"/>
+
+        <ImageView
+            android:id="@+id/drawlist_item_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/iconContainer"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/drawListItemTextTitle"
+            style="@style/TTNavDrawerItemText"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Getting Started">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/drawListItemTextSubtitle"
+            style="@style/TTNavDrawerItemSubText"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Some sub text to be filled in"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/iconContainer"
+        android:background="#ffc8c7c7"/>
+
+</RelativeLayout>

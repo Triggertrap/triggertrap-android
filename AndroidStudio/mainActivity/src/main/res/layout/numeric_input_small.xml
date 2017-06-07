@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.triggertrap.widget.NumericView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/numericView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_text_field"
+    android:orientation="horizontal">
+
+    <com.triggertrap.view.ZeroTopPaddingTextView
+        android:id="@+id/numericValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:maxLength="5"
+        android:maxLines="1"
+        android:text="0"
+        style="@style/small_bold"
+
+        />
+
+</com.triggertrap.widget.NumericView>

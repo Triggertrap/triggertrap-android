@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|right"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:background="#df000000"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/first"
+        layout="@layout/three_keys" />
+
+    <include
+        android:id="@+id/second"
+        layout="@layout/three_keys" />
+
+    <include
+        android:id="@+id/third"
+        layout="@layout/three_keys" />
+
+    <include
+        android:id="@+id/fourth"
+        layout="@layout/three_bottom_keys" />
+
+</LinearLayout>

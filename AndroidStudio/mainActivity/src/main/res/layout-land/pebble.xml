@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/tt_vlight_grey">
+
+        <TextView
+            android:id="@+id/triggerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/trigger"
+            android:textColor="@color/tt_dark_grey"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/tt_white">
+
+                <TextView
+                    android:id="@+id/wifi_slave_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:text="@string/listening_for_pebble_trigger"
+                    android:textColor="@color/tt_dark_grey" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/card_shadow_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:src="@drawable/card_shadow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slaceInfoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tt_red"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sequenceLabels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="@string/in_pebble" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/tt_dark_grey" />
+
+    <FrameLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_weight="2"
+        android:background="@color/tt_light_grey">
+
+        <com.triggertrap.widget.OngoingButton
+            android:id="@+id/pebbleButton"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            tt:toggle="true" />
+    </FrameLayout>
+
+</LinearLayout>

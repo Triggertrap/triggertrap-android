@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.triggertrap"
+        minSdkVersion 16
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':pEBBLE_KIT')
+    compile project(':pickerlibrary')
+    compile project(':styledDialogsLib')
+    compile project(':viewPagerIndicatorLib')
+    compile 'com.google.android.gms:play-services:5.0.89'
+    compile files('libs/android-support-v13.jar')
+    compile files('libs/jmdns-3.4.1.jar')
+    compile files('libs/jsuntimes-1.0.jar')
+    compile "com.mixpanel.android:mixpanel-android:4.2.2@aar"
+}
+
+configurations {
+    all*.exclude group: 'com.android.support', module: 'support-v4'
+}
